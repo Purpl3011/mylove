@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Fraunces", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #272727fc; /* Cor do texto, ajuste conforme necessário */
+    height: 100vh; /* Altura total da página */
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("purple\ wallpaper\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Certifica-se de que a imagem de fundo está atrás de todo o conteúdo */
+    animation: pulse-animation 2s ease-out infinite; /* Aplica a animação de pulsação */
+  }
+  
+  #picture {
+    width: 40rem;
+    height: 40rem; /* Mantém a largura e altura iguais para uma imagem quadrada */
+    border: .3rem solid #000; /* Define a largura e a cor da borda */
+    border-radius: 1rem; /* Adiciona cantos arredondados à borda */
+    box-shadow: 0 0 1rem black; /* Adiciona uma sombra à borda */
+    margin-bottom: 2,5rem;
+    object-fit: cover; /* Ajusta a imagem dentro do contêiner mantendo a proporção */
+  }
+  
+  #container-aplicativo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  #informacoes-faixa {
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+  }
+  
+  #container-botoes {
+    width: 100%; /* Certifique-se de que o container ocupe a largura total disponível */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
+  button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #anterior,
+  #proximo {
+    font-size: 5rem;
+  }
+  
+  #playpause {
+    font-size: 5rem;
+  }
+  
+  /* Animação de pulsação para a imagem de fundo */
+  @keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
