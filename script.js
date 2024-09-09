@@ -49,7 +49,7 @@ function voltarFaixa() {
         musicaAtual = musicaAtual - 1;
     }
 
-    audioMusica.src = '/PH/musicas/' + musicaAtual + '.mp3';
+    audioMusica.src = './' + musicaAtual + '.mp3';
     tocarFaixa();
     taTocando = 1;
 }
@@ -61,7 +61,7 @@ function proximaFaixa() {
         musicaAtual = musicaAtual + 1;
     }
 
-    audioMusica.src = '/PH/musicas/' + musicaAtual + '.mp3';
+    audioMusica.src = './' + musicaAtual + '.mp3';
     tocarFaixa();
     taTocando = 1;
 }
@@ -73,7 +73,7 @@ function voltarFoto() {
         fotoAtual = fotoAtual - 1;
     }
 
-    fotoAgora.src = '/PH/fotos/' + fotoAtual + '.jpg';
+    fotoAgora.src = './' + fotoAtual + '.jpg';
     fotoAntes = 1;
 }
 
@@ -84,6 +84,6 @@ function proximaFoto() {
         fotoAtual = fotoAtual + 1;
     }
 
-    fotoAgora.src = '/PH/fotos/' + fotoAtual + '.jpg';
+    fotoAgora.src = './' + fotoAtual + '.jpg';
     fotoAntes = 1;
 }
